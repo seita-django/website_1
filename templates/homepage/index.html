@@ -1,0 +1,94 @@
+{% extends "homepage/base.html" %}
+{% load static %}
+
+{% block contents %}
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}"/>
+    <!-- main page top !-->
+    <div class="home_pic">
+        <img src="{% static 'images/santorini.jpg' %}" alt="invalid">
+        <div class="catch_phrase">
+            <h1>Ready to explore the world?</h1>
+            <p>Let's get out of the ordinary life and have new experience with us.<br>
+                We are providing the best plan which perfectly suits you!
+            </p>
+            <h3><a href="{% url 'homepage:index' %}#jump_service">&nbsp;Check Our Service&nbsp;</a></h3>
+        </div>
+    </div>
+
+    <!-- main page about us !-->
+    <a id="jump_about">
+    <div class="contents">
+        <div class="left-column">
+            <img src="{% static 'images/travel.jpg' %}" alt="invalid">
+        </div>
+        <div class="right-column">
+            <h1>About Us</h1>
+            <p><br>“Travel is the main thing you purchase that makes you more extravagant”.
+                We, "at Take Me Travel", swear by this and put stock in satisfying travel dreams that make you perpetually rich constantly.
+                We have been moving excellent encounters for a considerable length of time through our cutting-edge planned
+                occasion bundles and other fundamental travel administrations. We rouse our clients to carry on with a rich life, brimming with extraordinary travel encounters.</p>
+        </div>
+    </div>
+    </a>
+
+    <!-- main page service table !-->
+    <a id="jump_service">
+    <div class="service_table">
+        <div class="service_line"></div>
+            <h2>20% OFF</h2>
+            <div class="service_cards">
+                <div class="discount_box">
+                    <h3>Indonesia</h3>
+                    <img src="{% static 'images/indonesia.jpg' %}" alt="invalid">
+                    <h3><strike>2 nights $1000</strike></h3>
+                    <h3>2 nights $800</h3>
+                    <p>This is script. This is script. This is script. This is script.
+                    This is script. This is script. This is script.</p>
+                </div>
+                <div class="discount_box">
+                    <h3>Warsaw</h3>
+                    <img src="{% static 'images/warsaw.jpg' %}" alt="invalid">
+                    <h3><strike>2 nights $1200</strike></h3>
+                    <h3>2 nights $960</h3>
+                    <p>This is script. This is script. This is script. This is script.
+                        This is script. This is script. This is script.</p>
+                </div>
+                <div class="discount_box">
+                    <h3>London</h3>
+                    <img src="{% static 'images/london.jpg' %}" alt="invalid">
+                    <h3><strike>2 night $2000</strike></h3>
+                    <h3>2 nights $1600</h3>
+                    <p>This is script. This is script. This is script. This is script.
+                    This is script. This is script. This is script.</p>
+                </div>
+            </div>
+        <div class="service_button">
+            <a href="" class="btn btn--red btn--radius btn--cubic"><h3>See More Options</h3><i class="fas fa-angle-right fa-position-right"></i></a>
+        </div>
+        <div class="service_line"></div>
+    </div>
+
+    <!-- Contact Us Form !-->
+    <div class="pic_contact_form">
+       <img src="{% static 'images/desert.jpg' %}" alt="invalid">
+        <!--Contact form-->
+        <div class="contact_form">
+                 <h1>Ask Us Anything</h1>
+                 <form method="post">
+                {% csrf_token %}
+                <!-- for文使って要素を取り出す-->
+                {% for field in form %}
+                     <div class="field">
+                        {{ field.errors }}
+                        {{ field.label_tag }}
+                        {{ field }}
+                        {% if field.help_text %}
+                            <p class="help">{{ field.help_text|safe }}</p>
+                        {% endif %}
+                     </div>
+                {% endfor %}
+                    <button type="submit">Submit</button>
+                </form>
+        </div>
+    </div>
+{% endblock %}

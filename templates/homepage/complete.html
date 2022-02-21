@@ -1,0 +1,12 @@
+{% extends "homepage/base.html" %}
+{% load static %}
+
+{% block contents %}
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}"/>
+
+    <!-- complete page !-->
+    <div class="complete_form">
+        <h1>Thank you for your contact! We have received.</h1>
+        <h3><a href="{% url 'homepage:index' %}">Back to main page</a></h3>
+    </div>
+{% endblock %}

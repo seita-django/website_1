@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- Responsive !-->
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> !-->
+        <title>Base</title>
+        <!-- CSS !-->
+        <link rel="stylesheet" href="{% static 'css/mystyle.css' %}"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />_
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- google font !-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+        <!-- BOOTSTRAP !-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 id="brand-name">TAKE ME TRAVEL✈︎</h1>
+            <div class="main">
+                <ul>
+                    <li class="current"><a href="{% url 'homepage:index' %}">Home</a></li>
+                    <li><a href="{% url 'homepage:index' %}#jump_about">About</a></li>
+                    <li><a href="{% url 'homepage:index' %}#jump_service">Service</a></li>
+                    <li><a href="{% url 'homepage:QandA' %}">Q&A</a></li>
+                    <li><a href="{% url 'homepage:index' %}#jump_contact">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        {% block contents %}
+        <!-- define contents (継承外) !-->
+        {% endblock %}
+
+    </body>
+
+    <!-- footer contact !-->
+    <a id="jump_contact">
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>00-000 XXXXX ,Warsaw, Poland</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>000-111-222</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>mail@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer var !-->
+            <nav>
+                <ul>
+                    <li><a href="{% url 'homepage:index' %}">Home</a></li>
+                    <li><a href="{% url 'homepage:index' %}#jump_about">About</a></li>
+                    <li><a href="{% url 'homepage:index' %}#jump_service">Service</a></li>
+                    <li><a href="{% url 'homepage:QandA' %}">Q&A</a></li>
+                    <li><a href="{% url 'homepage:index' %}#jump_contact">Contact</a></li>
+                </ul>
+            </nav>
+        <!-- copy right  !-->
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </a>
+</html>

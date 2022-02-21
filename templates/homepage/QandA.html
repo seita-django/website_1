@@ -1,0 +1,23 @@
+{% extends "homepage/base.html" %}
+{% load static %}
+
+{% block contents %}
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}"/>
+
+    <!-- Q and A !-->
+    <div class="QandA_form">
+        <h1>Q and A</h1>
+    </div>
+    <div class="QandA_form">
+        {% for context in QandA|slice:"10" %}
+        <div class="Question">
+            <h3>Q: {{ context.title }}</h3>
+            <h4>{{ context.text }}</h4>
+        </div>
+        {% endfor %}
+    </div>
+    <br>
+    <br>
+    <br>
+{% endblock %}
+

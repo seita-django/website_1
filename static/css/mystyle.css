@@ -1,0 +1,428 @@
+/****************************
+        base.html
+****************************/
+/* brand-name */
+#brand-name{
+    text-align: center;
+    font-size: 65px;
+    font-family: 'Chewy', cursive;
+    border-bottom: 1px solid  #C9CACA;
+}
+
+/* nav bar */
+.main{
+    text-align: center;
+}
+.main ul{
+    margin: 0 100 0 0px ;
+    padding: 0 ;
+}
+.main ul li{
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    width: 14%;
+    min-width: 90px;
+    font-size: 17px;
+}
+.main ul li a{
+    text-decoration: none;
+    color: #797979;
+}
+.main ul li.current a{
+    color: black;
+    font-weight: bold;
+}
+.main ul li a:hover{
+    color: black;
+}
+
+
+/* footer -- contact */
+.footer-section {
+  background-color: white;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+
+/* footer -- menu bar */
+nav{
+    text-align: center;
+    margin: 20px 10px 0 0;
+}
+nav ul{
+    margin: 0 ;
+    padding: 0 ;
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+    width: 10%;
+    min-width: 90px;
+}
+nav li:not(:last-child){
+    border-right:1px solid #373636;
+}
+nav a{
+    text-decoration: none;
+    color: #333;
+}
+nav a.current{
+    color: #00B0F0;
+    border-bottom:2px solid #00B0F0;
+}
+nav a:hover{
+    color:black;
+    border-bottom:2px solid black;
+    text-decoration: none;
+}
+
+/* footer -- copy right */
+.copyright-area{
+  background: white;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: white;
+}
+
+/****************************
+        index.html
+****************************/
+/* main page picture */
+.home_pic{
+    position: relative; /* 相対配置 */
+}
+
+.home_pic img{
+    /* background: url("/static/images/mainpage.jpg"); */
+    background-size: cover;
+    max-width: 100%;
+    /* height: 100vh; */
+    background-repeat: non-repeat;
+}
+
+/* phrase on main page picture */
+.home_pic h1{
+    position: absolute; /* 絶対配置 */
+    font-weight: bold;
+    color: white;
+    top: 8%;
+    left: 8%;
+}
+
+/* tablet */
+.home_pic p{
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    top: 18%;
+    left: 8%;
+}
+
+/* button for service */
+.home_pic h3 a{
+    text-decoration: none;  /*下線を表示させない*/
+    color: white;
+}
+
+.home_pic h3 a:hover {
+    text-decoration: none;  /*下線を表示させない*/
+    color: black;
+    background-color: white;
+}
+
+.home_pic h3{
+    position: absolute;
+    font-size: 30px;
+    top: 28%;
+    left: 8%;
+    border: solid white 2px; /* 線で囲う */
+    border-radius: 30px;
+    padding: 15px;  /* 文字と線の間の余白 */
+    background-color: rgb(238, 238, 238, 0.2);
+}
+
+/* contents */
+.contents{
+    margin: 100px 70px 100px 70px;
+    display: flex;
+}
+
+.contents img{
+    max-width: 600px;
+}
+
+.left-column {
+  float: left;
+  width: 50%; /* 要素の幅を50%に定義 */
+
+}
+
+.right-column {
+  float: right;
+  width: 50%; /* 要素の幅を50%に定義 */
+}
+
+.right-column h1{
+    text-align: center;
+}
+
+.about_us_title{
+    margin: 0 0 10 0;
+}
+
+.right-column p{
+    font-size: 20px;
+}
+
+/* service contents */
+.service_table{
+    margin: 40px 70px 40px 70px;
+    background-color: #F8F8FF
+}
+
+.service_table h2{
+    text-align: center;
+}
+
+/* line for service */
+.service_line{
+    border-bottom: 1px solid black;
+}
+
+/* discount cards */
+.service_cards{
+    margin: 20 70 20 70;
+    display: flex;
+    text-align: center;
+}
+
+.discount_box{
+    width:50%;
+    height:500px;
+    margin:10px 20px 20px 20px;
+    padding:10px;
+    border:2px solid black;
+    background-color: white;
+}
+
+.discount_box:hover{
+    transform: scale(1.05, 1.05);
+}
+
+.discount_box img{
+    max-width: 100%;
+}
+
+/* button for service -- See More Options */
+.service_button{
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;/*rem算出をしやすくするために*/
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: black;
+  border-radius: 0.5rem;
+  background-color: #D9E5FF;
+}
+
+a.btn--red.btn--cubic {
+  border-bottom: 5px solid black;
+}
+
+a.btn--red.btn--cubic:hover {
+  margin-top: 3px;
+  border-bottom: 2px solid black;
+}
+
+a.btn--radius {
+  border-radius: 100vh;
+}
+
+.fa-position-right {
+  position: absolute;
+  top: calc(50% - .5em);
+  right: 1rem;
+}
+/* background pic for contact form */
+.pic_contact_form{
+    position: relative; /* 相対配置 */
+}
+
+.pic_contact_form img{
+    opacity: 0.8;
+    background-size: cover;
+    max-width: 100%;
+}
+
+/* Contact Form */
+.contact_form {
+    text-align: center;
+    margin: 200px 200px 0px 200px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px 0 20px 0;
+    position: absolute; /* 絶対配置 */
+}
+
+/* tablet */
+@media screen and (max-width: 959px)
+{
+	.contact_form {
+    text-align: center;
+    margin: 0px 200px 0px 200px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px 0 20px 0;
+    position: absolute; /* 絶対配置 */
+    }
+}
+
+/* contact_form detail */
+ /* fieldブロックの上部20px空ける */
+    .field  {
+        margin-top: 20px;
+    }
+
+    /* ブロック要素にする */
+    label {
+        display: block;
+    }
+
+    /* 件名・Emailの枠 */
+    input {
+        width: 20%;
+        padding: 5px;
+        box-sizing: border-box;
+        border: solid 2px;
+    }
+
+    /* 注意書きを赤色指定 */
+    .help {
+        color: red;
+    }
+
+    /* メッセージの枠 */
+    textarea {
+        width: 50%;
+        box-sizing: border-box;
+        border-radius: 4px;
+        border: solid 2px;
+    }
+
+    /* 送信ボタン */
+    button {
+        margin-top: 30px;
+        width: 10%;
+        padding: 5px;
+    }
+
+/****************************
+     contact_result.html
+****************************/
+.complete_form{
+    margin: 200px 140px 200px 140px;
+}
+
+
+/****************************
+        QandA.html
+****************************/
+.QandA_form{
+    margin: 100px 140px 0px 140px;
+}
+
+.QandA_form h1{
+    text-align: center;
+}
+
+.Question{
+    margin: 20px 40px 50px 40px;
+    padding: 5px 20px 10px 20px;
+    color: black;
+    background: #F2F2F2;
+}
+
+.Question h3{
+    margin: 20px 0 25px 0;
+}
+
+
+
+
+
