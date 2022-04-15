@@ -9,6 +9,8 @@ Issue:
 - NO RESPONSIVE. This is only for desktop / laptop
 
 Image:
-![Screen Shot 2022-02-27 at 13 00 26](https://user-images.githubusercontent.com/91435300/163629872-9b81304c-69c5-4048-9277-c766c7e7847e.PNG)
-![Screen Shot 2022-02-27 at 13 00 33](https://user-images.githubusercontent.com/91435300/163629883-fd1af56d-4e2d-4b41-9cea-2637b9e0d2f5.PNG)
-![Screen Shot 2022-02-27 at 13 00 39](https://user-images.githubusercontent.com/91435300/163629891-2aee30a0-9e31-4213-b9a4-bca818477ce6.PNG)
+
+![TravelHomapage1](https://user-images.githubusercontent.com/91435300/163630012-12bcefdd-3403-4f57-a0af-3fe4c56ab6c1.PNG)
+![TravelHomapge2](https://user-images.githubusercontent.com/91435300/163630016-6e00a487-fcd1-4157-82fe-95f76a111ba3.PNG)
+![TravelHomepage3](https://user-images.githubusercontent.com/91435300/163630020-13ae711d-7c72-42fe-ab77-2019e7cdb4b5.PNG)
+![TravelHomepage4](https://user-images.githubusercontent.com/91435300/163630027-0354e1f8-ab2c-4e74-93b5-61065e19e6c3.PNG)
