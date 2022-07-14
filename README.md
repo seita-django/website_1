@@ -8,7 +8,7 @@ This is a travel agency website and I added the following functions
 Issue:
 - I haven't added the way to pay for service.
 - NO RESPONSIVE. This is only for desktop / laptop
-
+<br><br>
 // 日本語 // <br>
  旅行会社を模倣して作成しました。
  - お問い合わせフォームあり (スーパーユーザーのGmailに届くようにしました)
